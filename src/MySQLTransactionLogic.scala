@@ -1,5 +1,6 @@
 import java.sql.{DriverManager, Connection, Statement, ResultSet,SQLException}
 
+// MySQL用トランザクション制御クラス
 class MySQLTransactionLogic(val connection : Connection) extends TransactionLogic {
   connection.setAutoCommit(false);
 

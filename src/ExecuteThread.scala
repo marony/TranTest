@@ -1,5 +1,6 @@
 import java.sql.{DriverManager, Connection, Statement, ResultSet,SQLException}
 
+// ロジック実行スレッド
 class ExecuteThread(val params : Params) extends Thread {
   override def run() : Unit = {
     // 接続
@@ -8,6 +9,7 @@ class ExecuteThread(val params : Params) extends Thread {
     val transaction = DBFactory.getTransactionLogic(DB.MySQL, params.transaction_type, connection)
     try {
       // ロジック実行
+      // TODO: ロジックは別クラスに分離する
       dao.executeUpdate("USE trantest;")
       for (i <- 1 to params.loop_count) {
         transaction.beginTran

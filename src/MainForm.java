@@ -5,6 +5,7 @@ import org.eclipse.swt.events.SelectionEvent;
 
 import java.math.*;
 
+// メイン画面(WindowBuilderで自動生成)
 public class MainForm {
 
   protected Shell shell;
@@ -15,7 +16,7 @@ public class MainForm {
   private Text txtHost;
   private Text txtUser;
   private Text txtPassword;
-  private Text txtLog;
+  public Text txtLog;
 
   /**
    * Launch the application.

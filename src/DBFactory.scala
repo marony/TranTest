@@ -1,15 +1,18 @@
 import java.sql.{DriverManager, Connection, Statement, ResultSet,SQLException}
 
+// データベースの製品種別
 object DB extends Enumeration {
   type DB = Value
   val MySQL = Value
 }
 
+// データベースのトランザクション分離レベル
 object IsolationLevel extends Enumeration {
   type IsolationLevel = Value
   val ReadUncommitted, ReadCommitted, RepeatableRead, Serializable = Value
 }
 
+// データベース依存ロジック系ファクトリクラス
 object DBFactory {
   def getConnection(database : DB.DB, isolation_level : Int, table : String, user : String, password : String) : Connection = {
     try {

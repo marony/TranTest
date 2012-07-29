@@ -1,5 +1,6 @@
 import java.sql.{DriverManager, Connection, Statement, ResultSet,SQLException}
 
+// MySQL用データベースアクセスクラス
 class MySQLDAO(val connection : Connection) extends DAO {
   def executeQuery(query: String): (Statement, ResultSet) = {
     val	stmt = connection.createStatement()

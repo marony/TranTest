@@ -1,5 +1,6 @@
 import java.sql.{DriverManager, Connection, Statement, ResultSet,SQLException}
 
+// メインクラス
 object Main {
   var log = ""
   
