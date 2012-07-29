@@ -29,4 +29,4 @@ EGit 2.0.0
 
 画面イメージ
 ------------
-![![画面イメージ][image]](https://github.com/marony/TranTest/blob/master/Screenshot1.png)
+![画面イメージ](https://github.com/marony/TranTest/blob/master/Screenshot1.png)
