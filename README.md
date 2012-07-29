@@ -20,15 +20,13 @@ EGit 2.0.0
 ----------------
 ### テスト1 ###
 以下のテーブルの口座1から金額を減らし、口座2の金額を増やします。テストの都合上、UPDATE文一発ではなくSELECTで現在の金額を読んでからUPDATEで更新しています。  
-+----+----------+  
 | id | amount   |  
-+----+----------+  
+-----------------  
 |  1 | 10000.00 |  
 |  2 |     0.00 |  
-+----+----------+  
 
 当然、トランザクションを掛けないと結果は正しくなりません。  
 
 画面イメージ
 ------------
-![画面イメージ](https://github.com/marony/TranTest/blob/master/Screenshot1.png "メイン画面")
+![![画面イメージ][image]](https://github.com/marony/TranTest/blob/master/Screenshot1.png)
